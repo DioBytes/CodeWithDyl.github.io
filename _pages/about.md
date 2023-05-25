@@ -34,6 +34,6 @@ I learned that no matter which path you choose, the obstacles you face are made 
 
 Now, as an IT student assistant at the University of Louisville's President's Office, I carry those invaluable lessons with me every day. I'm constantly pushing myself to learn new things, explore consciousness, and live passionately. My goal is to help others help themselves, sharing the wisdom I've gained from overcoming life's challenges.
 
-In my free time, you can find me staying active, whipping up a storm in the kitchen, or tending to my side gig in lawn care, which I affectionately call "Dylan of Earth." With an ambitious project underway to create a productivity app using Swift, I'm eager to establish my voice on social media and continue my journey of helping people better their lives.
+In my free time, you can find me staying active, whipping up a storm in the kitchen, or creating new things to continue my journey of helping people better their lives.
 
 So, welcome to my "about me" page. I'm Dylan, a pizza-loving, tech-savvy, and passionate individual, always ready to share my story and learn from yours. Whether you're here to collaborate, learn, or just say hello, I'm glad our paths have crossed. Let's make something great together.
