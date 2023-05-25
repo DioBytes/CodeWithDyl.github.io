@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: B.A. in Computer Information Systems
-      institution: University of Louisville
+      institution: University of Louisville - College of Business
       year: 2024
       description:
         - Description 1.
@@ -57,6 +57,18 @@
       year: 2015-2022
       description:
 
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Web Development
+      items:
+        - User Interface Design / Experience
+        - API Development
+        - Web Application Development
+    - title: Artificial Intelligence
+      items:
+        - Machine Learning
+        - AGI Research and Testing
 # - title: Open Source Projects
 #   type: time_table
 #   contents:
