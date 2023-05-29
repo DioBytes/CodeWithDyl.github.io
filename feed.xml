@@ -1,5 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://codewithdyl.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://codewithdyl.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-29T19:10:36+00:00</updated><id>https://codewithdyl.github.io/feed.xml</id><title type="html">Dylan J. Dombrowski</title><subtitle>A portfolio website for Dylan J. Dombrowski.
-</subtitle><entry><title type="html">Giscus Comments</title><link href="https://codewithdyl.github.io/blog/2022/giscus-comments/" rel="alternate" type="text/html" title="Giscus Comments" /><published>2022-12-10T00:00:00+00:00</published><updated>2022-12-10T00:00:00+00:00</updated><id>https://codewithdyl.github.io/blog/2022/giscus-comments</id><content type="html" xml:base="https://codewithdyl.github.io/blog/2022/giscus-comments/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://codewithdyl.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://codewithdyl.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-29T19:23:05+00:00</updated><id>https://codewithdyl.github.io/feed.xml</id><title type="html">Dylan J. Dombrowski</title><subtitle>A portfolio website for Dylan J. Dombrowski.
+</subtitle><entry><title type="html">a post with code</title><link href="https://codewithdyl.github.io/blog/2023/code/" rel="alternate" type="text/html" title="a post with code" /><published>2023-05-29T15:09:00+00:00</published><updated>2023-05-29T15:09:00+00:00</updated><id>https://codewithdyl.github.io/blog/2023/code</id><content type="html" xml:base="https://codewithdyl.github.io/blog/2023/code/"><![CDATA[<p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
+It supports more than 100 languages.
+This example is in C++.
+All you have to do is wrap your code in markdown code tags:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">c++
+</span><span class="n">code</span> <span class="n">code</span> <span class="n">code</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+
+    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
+
+    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>By default, it does not display line numbers. If you want to display line numbers for every code block, you can set <code class="language-plaintext highlighter-rouge">kramdown.syntax_highlighter_opts.block.line_numbers</code> to true in your <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
+
+<p>If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:</p>
+
+<p>{% highlight c++ linenos %} <br /> code code code <br /> {% endhighlight %}</p>
+
+<p>The keyword <code class="language-plaintext highlighter-rouge">linenos</code> triggers display of line numbers.
+Produces something like this:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+<span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
+    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+
+    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
+
+    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="code" /><summary type="html"><![CDATA[an example of a blog post with some code]]></summary></entry><entry><title type="html">Giscus Comments</title><link href="https://codewithdyl.github.io/blog/2022/giscus-comments/" rel="alternate" type="text/html" title="Giscus Comments" /><published>2022-12-10T00:00:00+00:00</published><updated>2022-12-10T00:00:00+00:00</updated><id>https://codewithdyl.github.io/blog/2022/giscus-comments</id><content type="html" xml:base="https://codewithdyl.github.io/blog/2022/giscus-comments/"><![CDATA[<hr />
 
 <h1 id="layout-post">layout: post</h1>
 
@@ -58,7 +132,7 @@ sequenceDiagram
 </code></pre></div></div>
 
 <div class="jekyll-diagrams diagrams mermaid">
-  <svg id="mermaid-1685387437792" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:450px;" viewBox="-50 -10 450 231"><style>#mermaid-1685387437792 .label{font-family:trebuchet ms,verdana,arial;color:#333}#mermaid-1685387437792 .node circle,#mermaid-1685387437792 .node ellipse,#mermaid-1685387437792 .node polygon,#mermaid-1685387437792 .node rect{fill:#ececff;stroke:#9370db;stroke-width:1px}#mermaid-1685387437792 .node.clickable{cursor:pointer}#mermaid-1685387437792 .arrowheadPath{fill:#333}#mermaid-1685387437792 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1685387437792 .edgeLabel{background-color:#e8e8e8}#mermaid-1685387437792 .cluster rect{fill:#ffffde!important;stroke:#aa3!important;stroke-width:1px!important}#mermaid-1685387437792 .cluster text{fill:#333}#mermaid-1685387437792 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:trebuchet ms,verdana,arial;font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1685387437792 .actor{stroke:#ccf;fill:#ececff}#mermaid-1685387437792 text.actor{fill:#000;stroke:none}#mermaid-1685387437792 .actor-line{stroke:grey}#mermaid-1685387437792 .messageLine0{marker-end:"url(#arrowhead)"}#mermaid-1685387437792 .messageLine0,#mermaid-1685387437792 .messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#mermaid-1685387437792 #arrowhead{fill:#333}#mermaid-1685387437792 #crosshead path{fill:#333!important;stroke:#333!important}#mermaid-1685387437792 .messageText{fill:#333;stroke:none}#mermaid-1685387437792 .labelBox{stroke:#ccf;fill:#ececff}#mermaid-1685387437792 .labelText,#mermaid-1685387437792 .loopText{fill:#000;stroke:none}#mermaid-1685387437792 .loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#ccf}#mermaid-1685387437792 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1685387437792 .noteText{fill:#000;stroke:none;font-family:trebuchet ms,verdana,arial;font-size:14px}#mermaid-1685387437792 .section{stroke:none;opacity:.2}#mermaid-1685387437792 .section0{fill:rgba(102,102,255,.49)}#mermaid-1685387437792 .section2{fill:#fff400}#mermaid-1685387437792 .section1,#mermaid-1685387437792 .section3{fill:#fff;opacity:.2}#mermaid-1685387437792 .sectionTitle0,#mermaid-1685387437792 .sectionTitle1,#mermaid-1685387437792 .sectionTitle2,#mermaid-1685387437792 .sectionTitle3{fill:#333}#mermaid-1685387437792 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px}#mermaid-1685387437792 .grid .tick{stroke:#d3d3d3;opacity:.3;shape-rendering:crispEdges}#mermaid-1685387437792 .grid path{stroke-width:0}#mermaid-1685387437792 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1685387437792 .task{stroke-width:2}#mermaid-1685387437792 .taskText{text-anchor:middle;font-size:11px}#mermaid-1685387437792 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}#mermaid-1685387437792 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1685387437792 .taskText0,#mermaid-1685387437792 .taskText1,#mermaid-1685387437792 .taskText2,#mermaid-1685387437792 .taskText3{fill:#fff}#mermaid-1685387437792 .task0,#mermaid-1685387437792 .task1,#mermaid-1685387437792 .task2,#mermaid-1685387437792 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1685387437792 .taskTextOutside0,#mermaid-1685387437792 .taskTextOutside1,#mermaid-1685387437792 .taskTextOutside2,#mermaid-1685387437792 .taskTextOutside3{fill:#000}#mermaid-1685387437792 .active0,#mermaid-1685387437792 .active1,#mermaid-1685387437792 .active2,#mermaid-1685387437792 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1685387437792 .activeText0,#mermaid-1685387437792 .activeText1,#mermaid-1685387437792 .activeText2,#mermaid-1685387437792 .activeText3{fill:#000!important}#mermaid-1685387437792 .done0,#mermaid-1685387437792 .done1,#mermaid-1685387437792 .done2,#mermaid-1685387437792 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1685387437792 .doneText0,#mermaid-1685387437792 .doneText1,#mermaid-1685387437792 .doneText2,#mermaid-1685387437792 .doneText3{fill:#000!important}#mermaid-1685387437792 .crit0,#mermaid-1685387437792 .crit1,#mermaid-1685387437792 .crit2,#mermaid-1685387437792 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1685387437792 .activeCrit0,#mermaid-1685387437792 .activeCrit1,#mermaid-1685387437792 .activeCrit2,#mermaid-1685387437792 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1685387437792 .doneCrit0,#mermaid-1685387437792 .doneCrit1,#mermaid-1685387437792 .doneCrit2,#mermaid-1685387437792 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1685387437792 .activeCritText0,#mermaid-1685387437792 .activeCritText1,#mermaid-1685387437792 .activeCritText2,#mermaid-1685387437792 .activeCritText3,#mermaid-1685387437792 .doneCritText0,#mermaid-1685387437792 .doneCritText1,#mermaid-1685387437792 .doneCritText2,#mermaid-1685387437792 .doneCritText3{fill:#000!important}#mermaid-1685387437792 .titleText{text-anchor:middle;font-size:18px;fill:#000}#mermaid-1685387437792 g.classGroup text{fill:#9370db;stroke:none;font-family:trebuchet ms,verdana,arial;font-size:10px}#mermaid-1685387437792 g.classGroup rect{fill:#ececff;stroke:#9370db}#mermaid-1685387437792 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1685387437792 .classLabel .box{stroke:none;stroke-width:0;fill:#ececff;opacity:.5}#mermaid-1685387437792 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1685387437792 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1685387437792 #compositionEnd,#mermaid-1685387437792 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1685387437792 #aggregationEnd,#mermaid-1685387437792 #aggregationStart{fill:#ececff;stroke:#9370db;stroke-width:1}#mermaid-1685387437792 #dependencyEnd,#mermaid-1685387437792 #dependencyStart,#mermaid-1685387437792 #extensionEnd,#mermaid-1685387437792 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1685387437792 .branch-label,#mermaid-1685387437792 .commit-id,#mermaid-1685387437792 .commit-msg{fill:#d3d3d3;color:#d3d3d3}</style><style>#mermaid-1685387437792 {
+  <svg id="mermaid-1685388186861" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:450px;" viewBox="-50 -10 450 231"><style>#mermaid-1685388186861 .label{font-family:trebuchet ms,verdana,arial;color:#333}#mermaid-1685388186861 .node circle,#mermaid-1685388186861 .node ellipse,#mermaid-1685388186861 .node polygon,#mermaid-1685388186861 .node rect{fill:#ececff;stroke:#9370db;stroke-width:1px}#mermaid-1685388186861 .node.clickable{cursor:pointer}#mermaid-1685388186861 .arrowheadPath{fill:#333}#mermaid-1685388186861 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1685388186861 .edgeLabel{background-color:#e8e8e8}#mermaid-1685388186861 .cluster rect{fill:#ffffde!important;stroke:#aa3!important;stroke-width:1px!important}#mermaid-1685388186861 .cluster text{fill:#333}#mermaid-1685388186861 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:trebuchet ms,verdana,arial;font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1685388186861 .actor{stroke:#ccf;fill:#ececff}#mermaid-1685388186861 text.actor{fill:#000;stroke:none}#mermaid-1685388186861 .actor-line{stroke:grey}#mermaid-1685388186861 .messageLine0{marker-end:"url(#arrowhead)"}#mermaid-1685388186861 .messageLine0,#mermaid-1685388186861 .messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#mermaid-1685388186861 #arrowhead{fill:#333}#mermaid-1685388186861 #crosshead path{fill:#333!important;stroke:#333!important}#mermaid-1685388186861 .messageText{fill:#333;stroke:none}#mermaid-1685388186861 .labelBox{stroke:#ccf;fill:#ececff}#mermaid-1685388186861 .labelText,#mermaid-1685388186861 .loopText{fill:#000;stroke:none}#mermaid-1685388186861 .loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#ccf}#mermaid-1685388186861 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1685388186861 .noteText{fill:#000;stroke:none;font-family:trebuchet ms,verdana,arial;font-size:14px}#mermaid-1685388186861 .section{stroke:none;opacity:.2}#mermaid-1685388186861 .section0{fill:rgba(102,102,255,.49)}#mermaid-1685388186861 .section2{fill:#fff400}#mermaid-1685388186861 .section1,#mermaid-1685388186861 .section3{fill:#fff;opacity:.2}#mermaid-1685388186861 .sectionTitle0,#mermaid-1685388186861 .sectionTitle1,#mermaid-1685388186861 .sectionTitle2,#mermaid-1685388186861 .sectionTitle3{fill:#333}#mermaid-1685388186861 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px}#mermaid-1685388186861 .grid .tick{stroke:#d3d3d3;opacity:.3;shape-rendering:crispEdges}#mermaid-1685388186861 .grid path{stroke-width:0}#mermaid-1685388186861 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1685388186861 .task{stroke-width:2}#mermaid-1685388186861 .taskText{text-anchor:middle;font-size:11px}#mermaid-1685388186861 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}#mermaid-1685388186861 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1685388186861 .taskText0,#mermaid-1685388186861 .taskText1,#mermaid-1685388186861 .taskText2,#mermaid-1685388186861 .taskText3{fill:#fff}#mermaid-1685388186861 .task0,#mermaid-1685388186861 .task1,#mermaid-1685388186861 .task2,#mermaid-1685388186861 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1685388186861 .taskTextOutside0,#mermaid-1685388186861 .taskTextOutside1,#mermaid-1685388186861 .taskTextOutside2,#mermaid-1685388186861 .taskTextOutside3{fill:#000}#mermaid-1685388186861 .active0,#mermaid-1685388186861 .active1,#mermaid-1685388186861 .active2,#mermaid-1685388186861 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1685388186861 .activeText0,#mermaid-1685388186861 .activeText1,#mermaid-1685388186861 .activeText2,#mermaid-1685388186861 .activeText3{fill:#000!important}#mermaid-1685388186861 .done0,#mermaid-1685388186861 .done1,#mermaid-1685388186861 .done2,#mermaid-1685388186861 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1685388186861 .doneText0,#mermaid-1685388186861 .doneText1,#mermaid-1685388186861 .doneText2,#mermaid-1685388186861 .doneText3{fill:#000!important}#mermaid-1685388186861 .crit0,#mermaid-1685388186861 .crit1,#mermaid-1685388186861 .crit2,#mermaid-1685388186861 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1685388186861 .activeCrit0,#mermaid-1685388186861 .activeCrit1,#mermaid-1685388186861 .activeCrit2,#mermaid-1685388186861 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1685388186861 .doneCrit0,#mermaid-1685388186861 .doneCrit1,#mermaid-1685388186861 .doneCrit2,#mermaid-1685388186861 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1685388186861 .activeCritText0,#mermaid-1685388186861 .activeCritText1,#mermaid-1685388186861 .activeCritText2,#mermaid-1685388186861 .activeCritText3,#mermaid-1685388186861 .doneCritText0,#mermaid-1685388186861 .doneCritText1,#mermaid-1685388186861 .doneCritText2,#mermaid-1685388186861 .doneCritText3{fill:#000!important}#mermaid-1685388186861 .titleText{text-anchor:middle;font-size:18px;fill:#000}#mermaid-1685388186861 g.classGroup text{fill:#9370db;stroke:none;font-family:trebuchet ms,verdana,arial;font-size:10px}#mermaid-1685388186861 g.classGroup rect{fill:#ececff;stroke:#9370db}#mermaid-1685388186861 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1685388186861 .classLabel .box{stroke:none;stroke-width:0;fill:#ececff;opacity:.5}#mermaid-1685388186861 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1685388186861 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1685388186861 #compositionEnd,#mermaid-1685388186861 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1685388186861 #aggregationEnd,#mermaid-1685388186861 #aggregationStart{fill:#ececff;stroke:#9370db;stroke-width:1}#mermaid-1685388186861 #dependencyEnd,#mermaid-1685388186861 #dependencyStart,#mermaid-1685388186861 #extensionEnd,#mermaid-1685388186861 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1685388186861 .branch-label,#mermaid-1685388186861 .commit-id,#mermaid-1685388186861 .commit-msg{fill:#d3d3d3;color:#d3d3d3}</style><style>#mermaid-1685388186861 {
     color: rgb(0, 0, 0);
     font: normal normal 400 normal 16px / normal "Times New Roman";
   }</style><g></g><g><line id="actor0" x1="75" y1="5" x2="75" y2="220" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="75" dy="0">John</tspan></text></g><g><line id="actor1" x1="275" y1="5" x2="275" y2="220" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="275" dy="0">Alice</tspan></text></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" stroke-width="1px" d="M 9,2 V 6 L16,4 Z" style="stroke-dasharray: 0, 0;"></path><path fill="none" stroke="#000000" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><g><text x="175" y="93" class="messageText" style="text-anchor: middle;">Hello John, how are you?</text><line x1="275" y1="100" x2="75" y2="100" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="175" y="128" class="messageText" style="text-anchor: middle;">Great!</text><line x1="75" y1="135" x2="275" y2="135" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="0" y="155" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="187.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="75" dy="0">John</tspan></text></g><g><rect x="200" y="155" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="187.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="275" dy="0">Alice</tspan></text></g></svg>
@@ -468,78 +542,4 @@ MathJax will automatically number equations:
 
 and by adding `\label{...}` inside the equation environment, we can now refer to the equation using `\eqref`.
 
-Note that MathJax 3 is [a major re-write of MathJax](https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html) that brought a significant improvement to the loading and rendering speed, which is now [on par with KaTeX](http://www.intmath.com/cg5/katex-mathjax-comparison.php). -->]]></content><author><name></name></author><summary type="html"><![CDATA[&lt;!– — layout: post title: a post with math date: 2015-10-20 11:12:00-0400 description: an example of a blog post with some math tags: formatting math categories: sample-posts related_posts: false — This theme supports rendering beautiful math in inline and display modes using MathJax 3 engine. You just need to surround your math expression with $$, like $$ E = mc^2 $$. If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).]]></summary></entry><entry><title type="html">a post with code</title><link href="https://codewithdyl.github.io/blog/2015/first-post/" rel="alternate" type="text/html" title="a post with code" /><published>2015-07-15T15:09:00+00:00</published><updated>2015-07-15T15:09:00+00:00</updated><id>https://codewithdyl.github.io/blog/2015/first-post</id><content type="html" xml:base="https://codewithdyl.github.io/blog/2015/first-post/"><![CDATA[<p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
-It supports more than 100 languages.
-This example is in C++.
-All you have to do is wrap your code in markdown code tags:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">c++
-</span><span class="n">code</span> <span class="n">code</span> <span class="n">code</span>
-<span class="p">```</span>
-</code></pre></div></div>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
-
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
-
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>By default, it does not display line numbers. If you want to display line numbers for every code block, you can set <code class="language-plaintext highlighter-rouge">kramdown.syntax_highlighter_opts.block.line_numbers</code> to true in your <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
-
-<p>If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:</p>
-
-<p>{% highlight c++ linenos %} <br /> code code code <br /> {% endhighlight %}</p>
-
-<p>The keyword <code class="language-plaintext highlighter-rouge">linenos</code> triggers display of line numbers.
-Produces something like this:</p>
-
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-<span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
-
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
-
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="code" /><summary type="html"><![CDATA[an example of a blog post with some code]]></summary></entry></feed>
+Note that MathJax 3 is [a major re-write of MathJax](https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html) that brought a significant improvement to the loading and rendering speed, which is now [on par with KaTeX](http://www.intmath.com/cg5/katex-mathjax-comparison.php). -->]]></content><author><name></name></author><summary type="html"><![CDATA[&lt;!– — layout: post title: a post with math date: 2015-10-20 11:12:00-0400 description: an example of a blog post with some math tags: formatting math categories: sample-posts related_posts: false — This theme supports rendering beautiful math in inline and display modes using MathJax 3 engine. You just need to surround your math expression with $$, like $$ E = mc^2 $$. If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).]]></summary></entry></feed>
