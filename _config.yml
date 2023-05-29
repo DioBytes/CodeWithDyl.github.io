@@ -8,7 +8,7 @@ middle_name: J.
 last_name: Dombrowski
 email: dyland601@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  A portfolio website for Dylan J. Dombrowski.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -118,9 +118,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Dylan's Experiences # blog_name will be displayed in your blog page
+blog_name: Dylan's Blog # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: A place to document my experiences and share my thoughts. # blog_description will be displayed in your blog page
+blog_description: A place to document current ideas and projects # blog_description will be displayed in your blog page
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -263,33 +263,33 @@ display_tags: ["food", "tech", "career", "react", "life"] # this tags will be di
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
-scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+# scholar:
+#   last_name: [Einstein]
+#   first_name: [Albert, A.]
 
-  style: apa
-  locale: en
+#   style: apa
+#   locale: en
 
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
+#   source: /_bibliography/
+#   bibliography: papers.bib
+#   bibliography_template: bib
+#   # Note: if you have latex math in your bibtex, the latex filter
+#   # preprocessing may conflict with MathJAX if the latter is enabled.
+#   # See https://github.com/alshedivat/al-folio/issues/357.
+#   bibtex_filters: [latex, smallcaps, superscript]
 
-  replace_strings: true
-  join_strings: true
+#   replace_strings: true
+#   join_strings: true
 
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
+#   details_dir: bibliography
+#   details_layout: bibtex.html
+#   details_link: Details
 
-  query: "@*"
+#   query: "@*"
 
-badges: # Display different badges for your publications
-  altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
+# badges: # Display different badges for your publications
+#   altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+#   dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
