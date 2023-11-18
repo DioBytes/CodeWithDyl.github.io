@@ -10,8 +10,7 @@ email: dyland601@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A portfolio website for Dylan J. Dombrowski.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  
 keywords: dylanjdombrowski, dylan-dombrowski, dylan-j-dombrowski, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -53,7 +52,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1200px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -69,9 +68,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: CodeWithDyl# your GitHub user name
+github_username: DioBytes# your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: CodeWithDyl # your Twitter handle
+twitter_username: DioBytes # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: DylanDombrowski # your LinkedIn user name
 telegram_username: # your Telegram user name
