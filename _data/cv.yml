@@ -11,16 +11,16 @@
 - title: Education
   type: time_table
   contents:
-    - title: B.A. in Computer Information Systems
+    - title: B.A. in Computer Information Systems - Web Development
       institution: University of Louisville - College of Business
       year: 2024
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
     # - title: Federal teaching diploma
     #   institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
     #   year: 1900
@@ -35,18 +35,19 @@
       institution: Office of the President, University of Louisville
       year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Updated University of Louisville websites, including the President's website, to meet WCAG 2.0 AA accessibility standards.
+        - Setup and maintained hardware and software for the President's office and surrounding administrative building.
+        - Operating AV equipment for Board of Trustees meetings.
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
     - title: Dean's Suite Help Desk Assistant
       institution: College of Business, University of Louisville
       year: 2022-2023
-      description:
-        - Description 1.
-        - Description 2.
+      # description:
+      #   - Description 1.
+      #   - Description 2.
 
     - title: Teaching Assistant
       institution: College of Business, Intro to Marketing
